@@ -46,7 +46,7 @@ public class WhatsappRepository {
         if(users.size()==2) return this.createPersonalChat(users);
 
         customGroupCount++;
-        String groupName = "Group count ";
+        String groupName = "Group "+this.customGroupCount;
 
         Group group  = new Group(groupName, users.size());
         groupUserMap.put(group, users);
